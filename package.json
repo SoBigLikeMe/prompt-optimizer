@@ -1,52 +1,67 @@
 {
-  "name": "prompt-optimizer",
-  "displayName": "prompt-optimizer",
-  "description": "",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.103.0"
+  "name": "prompt-plus",
+  "displayName": "Prompt Plus",
+  "description": "VS Code 提示词优化助手",
+  "version": "0.0.2",
+  "publisher": "fuchuanye",  
+  "license": "MIT",          
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SoBigLikeMe/prompt-optimizer.git"
   },
-  "categories": [
-    "Other"
-  ],
+  "engines": { "vscode": "^1.103.0" },
+  "categories": ["Other"],
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
   "viewsContainers": {
     "activitybar": [
       {
-        "id": "prompt-optimizer-sidebar",
-        "title": "Prompt 优化",
+        "id": "prompt-plus-sidebar",
+        "title": "Prompt Plus",
         "icon": "media/wand.svg"
       }
     ]
   },
   "views": {
-    "prompt-optimizer-sidebar": [
+    "prompt-plus-sidebar": [
       {
-        "id": "promptOptimizer.panel",
-        "name": "优化面板",
+        "id": "promptPlus.panel",
+        "name": "让大模型更懂你",
         "type": "webview"
       }
     ]
   },
   "configuration": {
-    "title": "Prompt Optimizer",
+    "title": "Prompt Plus",
     "properties": {
-      "promptOptimizer.apiEndpoint": {
+      "promptPlus.apiEndpoint": {
         "type": "string",
         "default": "https://api.openai.com/v1/chat/completions",
         "description": "兼容 OpenAI 格式的 API 地址"
       },
-      "promptOptimizer.apiKey": {
+      "promptPlus.apiKey": {
         "type": "string",
         "default": "",
         "description": "API Key（建议后续改用 vscode.secrets 加密存储）"
       },
-      "promptOptimizer.model": {
+      "promptPlus.model": {
         "type": "string",
         "default": "gpt-4o",
         "description": "使用的模型名称"
+      },
+      "promptPlus.temperature": {
+        "type": "number",
+        "default": 0.2,
+        "minimum": 0,
+        "maximum": 2,
+        "description": "采样温度，范围 0~2"
+      },
+      "promptPlus.maxTokens": {
+        "type": "number",
+        "default": 1200,
+        "minimum": 1,
+        "description": "单次返回的最大 token 数"
       }
     }
   }

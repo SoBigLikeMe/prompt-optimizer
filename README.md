@@ -1,4 +1,4 @@
-# Prompt Optimizer
+# Prompt Plus
 
 Repository: https://github.com/SoBigLikeMe/prompt-optimizer
 
@@ -6,7 +6,7 @@ Repository: https://github.com/SoBigLikeMe/prompt-optimizer
 
 ### Overview
 
-`Prompt Optimizer` is a VS Code sidebar extension that rewrites raw prompts into clearer, more structured, and more reliable prompts.
+`Prompt Plus` is a VS Code sidebar extension that rewrites raw prompts into clearer, more structured, and more reliable prompts.
 
 ### Features
 
@@ -36,7 +36,7 @@ npm install
 
 3. Open the panel:
 
-- Click `Prompt 优化` in the Activity Bar.
+- Click `Prompt Plus` in the Activity Bar.
 - Open the `优化面板` view.
 
 ### How to Use
@@ -56,9 +56,9 @@ npm install
 
 You can also configure these in VS Code Settings:
 
-- `promptOptimizer.apiEndpoint`
-- `promptOptimizer.apiKey`
-- `promptOptimizer.model`
+- `promptPlus.apiEndpoint`
+- `promptPlus.apiKey`
+- `promptPlus.model`
 
 ### Troubleshooting
 
@@ -106,7 +106,7 @@ npm run package
 
 ### 项目简介
 
-`Prompt Optimizer` 是一个 VS Code 侧边栏插件，用来把原始提示词优化成结构更清晰、约束更完整、输出更稳定的版本。
+`Prompt Plus` 是一个 VS Code 侧边栏插件，用来把原始提示词优化成结构更清晰、约束更完整、输出更稳定的版本。
 
 ### 功能说明
 
@@ -136,7 +136,7 @@ npm install
 
 3. 打开插件面板：
 
-- 在左侧 Activity Bar 找到 `Prompt 优化` 图标。
+- 在左侧 Activity Bar 找到 `Prompt Plus` 图标。
 - 点击后进入 `优化面板`。
 
 ### 使用方式
@@ -156,9 +156,9 @@ npm install
 
 你也可以在 VS Code Settings 中直接配置：
 
-- `promptOptimizer.apiEndpoint`
-- `promptOptimizer.apiKey`
-- `promptOptimizer.model`
+- `promptPlus.apiEndpoint`
+- `promptPlus.apiKey`
+- `promptPlus.model`
 
 ### 常见问题
 
