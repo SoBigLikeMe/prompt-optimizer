@@ -8,6 +8,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - 暂无
 
+## [0.0.3] - 2026-04-17
+
+- 新增插件图标配置，使用根目录 `logo.jpg` 作为扩展图标。
+
 ## [0.0.2] - 2026-04-16
 
 - 新增“提示词可视化”可折叠编辑区，默认折叠，编辑内容实时同步到优化逻辑。
